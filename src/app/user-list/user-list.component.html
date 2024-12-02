@@ -1,0 +1,14 @@
+<div class="user-list-container">
+  <h3>User List</h3>
+  <ul>
+    <li *ngFor="let user of users">
+      <!-- Make the username clickable and call deleteUser() on click -->
+      <span 
+        [ngClass]="{'short-password': user.password.length < 5}" 
+        (click)="deleteUser(user)" 
+        class="clickable-user">
+        {{ user.userName }}
+      </span>
+    </li>
+  </ul>
+</div>

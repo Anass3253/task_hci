@@ -1,1 +1,9 @@
-<h1>Anas</h1>
+<div class="app-container">
+  <h1>HCI Task</h1>
+
+  <!-- User form to add new users -->
+  <app-user-form (userAdded)="addUser($event.userName, $event.password)"></app-user-form>
+
+  <!-- User list to display users -->
+  <app-user-list [users]="users" (userDeleted)="handleUserDeletion($event)"></app-user-list>
+</div>
