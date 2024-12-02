@@ -1,0 +1,10 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  form, .user-list {
+    width: 45%;
+  }
+  
